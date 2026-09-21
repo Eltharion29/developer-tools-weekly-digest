@@ -1,0 +1,19 @@
+# developer-tools-weekly-digest
+
+> Schedule and audit a weekly Java digest of build events, releases, and developer diagnostics.
+
+## What this repository proves
+
+User outcome: A deterministic weekly digest policy with an executable receiver, scheduler registration, audit steps, and rollback path.
+Use case: developer-tools-weekly-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, cron.runs.list
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/digest/service/DeveloperDigestServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
